@@ -7,6 +7,14 @@ body {
   line-height: 1.725;
   text-rendering: geometricPrecision;
 }
+a {
+  color: #d2d2d2;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
 .footer {
   text-align: center;
   margin-top: 30px;
@@ -67,12 +75,12 @@ body {
   padding-top: 30px;
 }
 .site-search-form #local-search-input {
-  border-radius: 10px;
-  height: 100%;
-  width: 100px;
+  border-radius: 5px;
+  height: 150%;
+  width: 200px;
 }
 #search-logo {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 #local-search-close {
   align: center;
