@@ -75,12 +75,12 @@ a:hover {
   padding-top: 30px;
 }
 .site-search-form #local-search-input {
-  border-radius: 5px;
+  border-radius: 10px;
   height: 150%;
-  width: 200px;
+  width: 120px;
 }
 #search-logo {
-  padding-right: 20px;
+  padding-right: 0px;
 }
 #local-search-close {
   align: center;
