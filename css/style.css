@@ -72,11 +72,11 @@ a:hover {
   margin-bottom: -20px;
 }
 .site-search-form {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 .site-search-form #local-search-input {
   border-radius: 10px;
-  height: 150%;
+  height: 120%;
   width: 120px;
 }
 #search-logo {
