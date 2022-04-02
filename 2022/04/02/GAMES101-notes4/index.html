@@ -20,30 +20,45 @@
     var CONFIG = {"hostname":"disenchantment.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="小白菜最近几斤了">
-<meta property="og:type" content="website">
-<meta property="og:title" content="种白菜">
-<meta property="og:url" content="http://disenchantment.com/index.html">
+  <meta name="description" content="10-12节：几何">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GAMES101现代计算机图形学入门笔记4">
+<meta property="og:url" content="http://disenchantment.com/2022/04/02/GAMES101-notes4/index.html">
 <meta property="og:site_name" content="种白菜">
-<meta property="og:description" content="小白菜最近几斤了">
+<meta property="og:description" content="10-12节：几何">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vli64zw5j218a07qwf3.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlhfocq9j20w80n6q3v.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vljzuikaj21900rkacf.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlkqlac7j214o0gomyd.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlla4lcnj20r607sq38.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vllftiwxj20nu0bwaau.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlli1dy8j21780cwgnt.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlljk9ujj21500o0acb.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vllltc0aj20zu0cy759.jpg">
+<meta property="article:published_time" content="2022-04-02T11:28:55.200Z">
+<meta property="article:modified_time" content="2022-04-02T11:32:08.565Z">
 <meta property="article:author" content="oops">
+<meta property="article:tag" content="图形学">
+<meta property="article:tag" content="GAMES101">
+<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vli64zw5j218a07qwf3.jpg">
 
-<link rel="canonical" href="http://disenchantment.com/">
+<link rel="canonical" href="http://disenchantment.com/2022/04/02/GAMES101-notes4/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>种白菜</title>
+  <title>GAMES101现代计算机图形学入门笔记4 | 种白菜</title>
   
 
 
@@ -153,9 +168,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -171,10 +187,9 @@
       <meta itemprop="name" content="种白菜">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/02/GAMES101-notes4/" class="post-title-link" itemprop="url">GAMES101现代计算机图形学入门笔记4</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          GAMES101现代计算机图形学入门笔记4
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -211,6 +226,7 @@
   </span>
   
   
+            <div class="post-description">10-12节：几何</div>
 
         </div>
       </header>
@@ -221,321 +237,113 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>10-12节：几何</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/04/02/GAMES101-notes4/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <span id="more"></span>
+<p>原材料：<a target="_blank" rel="noopener" href="https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html">课程材料</a> 和 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1X7411F744/">课程视频</a></p>
+<h2 id="10-geometry1">10 Geometry1</h2>
+<h3 id="隐式几何表示">隐式几何表示</h3>
+<p>告诉点满足的关系。例如在 3D 平面中，满足 <span class="markdown-them-math-inline">$x^2 + y^2 + z^2=1$</span> 的点。、</p>
+<p>隐式表达的优点是容易判断点是否再形状内或外。例如 <span class="markdown-them-math-inline">$f(x,y,z)=x^2+y^2+z^2-1$</span>，判断点 <span class="markdown-them-math-inline">$(3/4,1/2,1/4)$</span> 在形状内还是外？<span class="markdown-them-math-inline">$f(3/4,1/2,1/4)=-1/8&lt;0$</span>，在形状内；缺点是较难判断几何的形状。</p>
+<ul>
+<li>
+<p>代数表示几何，可以方便地进行曲面的交并</p>
+</li>
+<li>
+<p>可以用几何的距离函数做融合</p>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vli64zw5j218a07qwf3.jpg" alt="Untitled" style="zoom:50%;">
+</li>
+</ul>
+<h3 id="显式几何表示">显式几何表示</h3>
+<p>所有的点直接给吃或者是由参数映射给出。例如 <span class="markdown-them-math-inline">$f(u,v)=((2+\cos u)\cos v,(2+\cos) u)\sin v,\sin u)$</span>。优点是容易判断形状，不断遍历 <span class="markdown-them-math-inline">$u,v$</span> 值即可；缺点是较难判断具体的点是否在几何内。</p>
+<ul>
+<li>点云。一堆点表示几何</li>
+<li>多边形面</li>
+</ul>
+<h2 id="11-geometry2">11 Geometry2</h2>
+<h3 id="贝塞尔曲线">贝塞尔曲线</h3>
+<p>起点和切线方向确定；结束点和切线方向也确定。</p>
+<div class="markdown-them-math-block">$$\frac{b_0b_0^1}{b_0^1b_1}=\frac{b_1b_1^1}{b_1^1b_2}=\frac{b_0^1b_0^2}{b_0^2b_1^1}=\frac{t}{1-t}
+$$</div><img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlhfocq9j20w80n6q3v.jpg" alt="Untitled" style="zoom:30%;">
+<p>多个点时递归地进行计算。</p>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vljzuikaj21900rkacf.jpg" alt="Untitled" style="zoom:25%;">
+<p>当控制点过多的时候可能出现过拟合现象，可以每几个点控制一条贝塞尔曲线，当切线方向和大小相同时，可以得到光滑的贝塞尔曲线（导数连续）。</p>
+<h3 id="贝塞尔曲面">贝塞尔曲面</h3>
+<p>在 <span class="markdown-them-math-inline">$(u,v)$</span> 平面上，在 <span class="markdown-them-math-inline">$u$</span> 平面上得到不同的曲线，每条曲线在相同时刻 <span class="markdown-them-math-inline">$t$</span> 的点连线在 <span class="markdown-them-math-inline">$v$</span> 平面上得到一条贝塞尔曲线，该曲线随着时间  <span class="markdown-them-math-inline">$t$</span> 时时间的变动得到贝塞尔曲面。</p>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlkqlac7j214o0gomyd.jpg" alt="Untitled" style="zoom:40%;">
+<h2 id="12-geometry3">12 Geometry3</h2>
+<h3 id="曲面细分">曲面细分</h3>
+<ol>
+<li>
+<p>基于三角形的曲面细分：Loop 细分</p>
+<ul>
+<li>创建更多的三角形。在原三角形每条边上取一新点，连接新点形成新的边。将原始的三角形划分成四个小三角形。</li>
+</ul>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlla4lcnj20r607sq38.jpg" alt="Untitled" style="zoom:50%;">
+<ul>
+<li>更新顶点的位置。使用旧点位置计算新点位置：<span class="markdown-them-math-inline">$\frac{3}{8}(A+B)+\frac{1}{8}(C+D)$</span>，其中和新点一条边的点为 <span class="markdown-them-math-inline">$A$</span> 和 <span class="markdown-them-math-inline">$B$</span>，不同一边的点为 <span class="markdown-them-math-inline">$C$</span> 和 <span class="markdown-them-math-inline">$D$</span>；使用邻接的旧点更新计算旧点位置：<span class="markdown-them-math-inline">$(1-n\cdot u)\cdot\text{original}\_\text{position} + u\cdot\text{neighbour}\_\text{position}\_\text{sum}$</span>，其中 <span class="markdown-them-math-inline">$n$</span> 是邻接点的个数，<span class="markdown-them-math-inline">$u$</span> 的计算方式为 <span class="markdown-them-math-inline">$\begin{cases}3/16 &amp; \text{n=3 }\\3/8n &amp; \text{otherwise}\end{cases}$</span>，当邻接的点越多时该点本身权重保持为 <span class="markdown-them-math-inline">$5/8$</span>。</li>
+</ul>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vllftiwxj20nu0bwaau.jpg" alt="Untitled" style="zoom:60%;">
+</li>
+<li>
+<p>通用形状曲面细分：Catmull-Clark 细分</p>
+<ul>
+<li>细分面。每个面取一个中点，每条边奇异一个中点，连接所有的新点。</li>
+<li>奇异点指的是节点的度不为 4 的点。如下图所示，通过一次细分后，引入新的两个奇异点，所有的非四边形面都会消失；之后的细分找那个不会引入新的奇异点。</li>
+</ul>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlli1dy8j21780cwgnt.jpg" alt="Untitled" style="zoom:50%;">
+<ul>
+<li>更新顶点的位置，如下图所示。</li>
+</ul>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vlljk9ujj21500o0acb.jpg" alt="Untitled" style="zoom:40%;">
+</li>
+</ol>
+<h3 id="曲面简化">曲面简化</h3>
+<ol>
+<li>边坍缩
+<ul>
+<li>对每条边计算二次度量误差 (L2 distance)，坍缩误差最小的边。</li>
+<li>坍缩后更新相关边的二次度量误差，不断重复过程。可以借住堆排序的设计。</li>
+</ul>
+</li>
+</ol>
+<img data-src="https://tva1.sinaimg.cn/large/e6c9d24ely1h0vllltc0aj20zu0cy759.jpg" alt="Untitled" style="zoom:40%;">
+
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://disenchantment.com/2021/12/21/GAMES101-notes3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.png">
-      <meta itemprop="name" content="oops">
-      <meta itemprop="description" content="小白菜最近几斤了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="种白菜">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/12/21/GAMES101-notes3/" class="post-title-link" itemprop="url">GAMES101现代计算机图形学入门笔记3</a>
-        </h2>
+          <div class="post-tags">
+              <a href="/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" rel="tag"><i class="fa fa-tag"></i> 图形学</a>
+              <a href="/tags/GAMES101/" rel="tag"><i class="fa fa-tag"></i> GAMES101</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 笔记</a>
+          </div>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-12-21 12:58:14" itemprop="dateCreated datePublished" datetime="2021-12-21T12:58:14+08:00">2021-12-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-02 19:30:52" itemprop="dateModified" datetime="2022-04-02T19:30:52+08:00">2022-04-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">图形学</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2021/12/21/GAMES101-notes3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/21/GAMES101-notes3/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>7-9节：着色</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/12/21/GAMES101-notes3/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://disenchantment.com/2021/12/16/GAMES101-notes2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.png">
-      <meta itemprop="name" content="oops">
-      <meta itemprop="description" content="小白菜最近几斤了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="种白菜">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/12/16/GAMES101-notes2/" class="post-title-link" itemprop="url">GAMES101现代计算机图形学入门笔记2</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-12-16 20:52:44" itemprop="dateCreated datePublished" datetime="2021-12-16T20:52:44+08:00">2021-12-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-02 19:30:32" itemprop="dateModified" datetime="2022-04-02T19:30:32+08:00">2022-04-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">图形学</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2021/12/16/GAMES101-notes2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/16/GAMES101-notes2/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>5-6节：光栅化</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/12/16/GAMES101-notes2/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/12/21/GAMES101-notes3/" rel="prev" title="GAMES101现代计算机图形学入门笔记3">
+      <i class="fa fa-chevron-left"></i> GAMES101现代计算机图形学入门笔记3
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://disenchantment.com/2021/12/08/GAMES101-notes1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.png">
-      <meta itemprop="name" content="oops">
-      <meta itemprop="description" content="小白菜最近几斤了">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="种白菜">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/12/08/GAMES101-notes1/" class="post-title-link" itemprop="url">GAMES101现代计算机图形学入门笔记1</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-12-08 02:28:04" itemprop="dateCreated datePublished" datetime="2021-12-08T02:28:04+08:00">2021-12-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-02 19:30:33" itemprop="dateModified" datetime="2022-04-02T19:30:33+08:00">2022-04-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9B%BE%E5%BD%A2%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">图形学</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2021/12/08/GAMES101-notes1/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/08/GAMES101-notes1/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>1-4节：概述、线性代数和变换</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/12/08/GAMES101-notes1/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -582,6 +390,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#10-geometry1"><span class="nav-number">1.</span> <span class="nav-text">10 Geometry1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%90%E5%BC%8F%E5%87%A0%E4%BD%95%E8%A1%A8%E7%A4%BA"><span class="nav-number">1.1.</span> <span class="nav-text">隐式几何表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E5%BC%8F%E5%87%A0%E4%BD%95%E8%A1%A8%E7%A4%BA"><span class="nav-number">1.2.</span> <span class="nav-text">显式几何表示</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-geometry2"><span class="nav-number">2.</span> <span class="nav-text">11 Geometry2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF"><span class="nav-number">2.1.</span> <span class="nav-text">贝塞尔曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E9%9D%A2"><span class="nav-number">2.2.</span> <span class="nav-text">贝塞尔曲面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-geometry3"><span class="nav-number">3.</span> <span class="nav-text">12 Geometry3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B2%E9%9D%A2%E7%BB%86%E5%88%86"><span class="nav-number">3.1.</span> <span class="nav-text">曲面细分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B2%E9%9D%A2%E7%AE%80%E5%8C%96"><span class="nav-number">3.2.</span> <span class="nav-text">曲面简化</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
